@@ -1,0 +1,8 @@
+.Loader {
+  margin: 0 auto;
+}
+
+.Loader svg {
+  width: 120px;
+  height: 30px;
+}
