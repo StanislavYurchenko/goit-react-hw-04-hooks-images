@@ -35,8 +35,10 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const { userQuery, images, page, isLoading, image } = state;
+  const [{ userQuery, images, page, isLoading, image }, dispatch] = useReducer(
+    reducer,
+    initialState,
+  );
 
   useEffect(() => {
     const request = () => {
